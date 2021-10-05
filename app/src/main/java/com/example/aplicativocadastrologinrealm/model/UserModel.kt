@@ -5,7 +5,7 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import org.bson.types.ObjectId
 
-class UserModel: RealmObject() {
+open class UserModel(): RealmObject() {
 
     @PrimaryKey @SerializedName ("pk")
     val id: String = ObjectId().toString()
