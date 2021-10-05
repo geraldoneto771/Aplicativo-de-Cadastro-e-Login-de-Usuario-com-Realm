@@ -8,11 +8,11 @@ import org.bson.types.ObjectId
 open class UserModel(): RealmObject() {
 
     @PrimaryKey @SerializedName ("pk")
-    val id: String = ObjectId().toString()
+    var id: String = ObjectId().toString()
     @SerializedName("name")
-    val name: String = ""
+    var name: String = ""
     @SerializedName("email")
-    val email: String = ""
+    var email: String = ""
     @SerializedName("senha")
-    val senha: String = ""
+    var senha: String = ""
 }
