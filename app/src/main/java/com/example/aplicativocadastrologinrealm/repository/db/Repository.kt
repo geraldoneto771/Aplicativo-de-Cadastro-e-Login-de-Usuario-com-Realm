@@ -1,11 +1,15 @@
 package com.example.aplicativocadastrologinrealm.repository.db
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.aplicativocadastrologinrealm.model.UserModel
 import io.realm.Realm
 import io.realm.kotlin.where
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-class Repository {
+open class Repository {
 
     private val realm = Realm.getDefaultInstance()
 
@@ -40,5 +44,9 @@ class Repository {
         list.addAll(usuario)
 
         _usuario.value = list
+    }
+
+    fun login(email: String, password: String){
+        Log.e("sucess", "Login")
     }
 }
