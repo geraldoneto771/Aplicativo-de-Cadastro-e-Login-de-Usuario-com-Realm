@@ -12,10 +12,12 @@
         tools:layout="@layout/fragment_tela_introducao" >
         <action
             android:id="@+id/action_telaIntroducao_to_telaCriarConta"
-            app:destination="@id/telaCriarConta" />
+            app:destination="@id/telaCriarConta"
+            app:popUpTo="@id/telaIntroducao" />
         <action
             android:id="@+id/action_telaIntroducao_to_telaLogin"
-            app:destination="@id/telaLogin" />
+            app:destination="@id/telaLogin"
+            app:popUpTo="@id/telaIntroducao" />
     </fragment>
     <fragment
         android:id="@+id/telaCriarConta"
@@ -27,7 +29,8 @@
             app:destination="@id/telaLogin" />
         <action
             android:id="@+id/action_telaCriarConta_to_telaLogin2"
-            app:destination="@id/telaLogin" />
+            app:destination="@id/telaLogin"
+            app:popUpTo="@id/telaCriarConta" />
     </fragment>
     <fragment
         android:id="@+id/telaLogin"
