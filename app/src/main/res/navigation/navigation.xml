@@ -9,5 +9,33 @@
         android:id="@+id/telaIntroducao"
         android:name="com.example.aplicativocadastrologinrealm.TelaIntroducao"
         android:label="fragment_tela_introducao"
-        tools:layout="@layout/fragment_tela_introducao" />
+        tools:layout="@layout/fragment_tela_introducao" >
+        <action
+            android:id="@+id/action_telaIntroducao_to_telaCriarConta"
+            app:destination="@id/telaCriarConta" />
+        <action
+            android:id="@+id/action_telaIntroducao_to_telaLogin"
+            app:destination="@id/telaLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaCriarConta"
+        android:name="com.example.aplicativocadastrologinrealm.TelaCriarConta"
+        android:label="fragment_tela_criar_conta"
+        tools:layout="@layout/fragment_tela_criar_conta" >
+        <action
+            android:id="@+id/action_telaCriarConta_to_telaLogin"
+            app:destination="@id/telaLogin" />
+        <action
+            android:id="@+id/action_telaCriarConta_to_telaLogin2"
+            app:destination="@id/telaLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaLogin"
+        android:name="com.example.aplicativocadastrologinrealm.TelaLogin"
+        android:label="fragment_tela_login"
+        tools:layout="@layout/fragment_tela_login" >
+        <action
+            android:id="@+id/action_telaLogin_to_telaCriarConta"
+            app:destination="@id/telaCriarConta" />
+    </fragment>
 </navigation>

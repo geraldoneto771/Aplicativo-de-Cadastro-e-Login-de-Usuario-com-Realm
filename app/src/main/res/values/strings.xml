@@ -7,4 +7,11 @@
     <string name="text_intro_we_deliver">We deliver water at any point the Earth in 30 minutes</string>
     <string name="water_delivery">Water delivery</string>
     <string name="wwater">wwater</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="account">account</string>
+    <string name="create">create</string>
+    <string name="welcome">Welcome</string>
 </resources>
