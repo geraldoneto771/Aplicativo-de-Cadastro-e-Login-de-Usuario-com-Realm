@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/telaIntroducao"
-        android:name="com.example.aplicativocadastrologinrealm.TelaIntroducao"
+        android:name="com.example.aplicativocadastrologinrealm.ui.view.TelaIntroducao"
         android:label="fragment_tela_introducao"
         tools:layout="@layout/fragment_tela_introducao" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/telaCriarConta"
-        android:name="com.example.aplicativocadastrologinrealm.TelaCriarConta"
+        android:name="com.example.aplicativocadastrologinrealm.ui.view.TelaCriarConta"
         android:label="fragment_tela_criar_conta"
         tools:layout="@layout/fragment_tela_criar_conta" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/telaLogin"
-        android:name="com.example.aplicativocadastrologinrealm.TelaLogin"
+        android:name="com.example.aplicativocadastrologinrealm.ui.view.TelaLogin"
         android:label="fragment_tela_login"
         tools:layout="@layout/fragment_tela_login" >
         <action

@@ -1,4 +1,4 @@
-package com.example.aplicativocadastrologinrealm
+package com.example.aplicativocadastrologinrealm.ui.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
