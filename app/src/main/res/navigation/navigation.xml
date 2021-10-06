@@ -40,5 +40,14 @@
         <action
             android:id="@+id/action_telaLogin_to_telaCriarConta"
             app:destination="@id/telaCriarConta" />
+        <action
+            android:id="@+id/action_telaLogin_to_telaFeed"
+            app:destination="@id/telaFeed"
+            app:popUpTo="@id/telaLogin" />
     </fragment>
+    <fragment
+        android:id="@+id/telaFeed"
+        android:name="com.example.aplicativocadastrologinrealm.TelaFeed"
+        android:label="fragment_tela_feed"
+        tools:layout="@layout/fragment_tela_feed" />
 </navigation>

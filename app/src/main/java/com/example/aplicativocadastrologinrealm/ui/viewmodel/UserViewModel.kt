@@ -14,4 +14,9 @@ class UserViewModel: ViewModel() {
     fun createUser( user: UserModel) { UserDB().create(user)}
 
     fun getAllUser() {UserDB().getAll(_user)}
+
+    fun login(email: String){
+        UserDB().login(email)
+
+    }
 }

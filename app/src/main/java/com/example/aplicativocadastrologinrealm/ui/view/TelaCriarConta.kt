@@ -44,6 +44,9 @@ class TelaCriarConta : Fragment() {
             Snackbar.make(mBinding.root,"Usuário criado com sucesso!", Snackbar.LENGTH_LONG).show()
             findNavController().popBackStack()
         }
+        mBinding.buttonLogIn.setOnClickListener {
+            findNavController().navigate(TelaCriarContaDirections.actionTelaCriarContaToTelaLogin2())
+        }
         return mBinding.root
     }
 

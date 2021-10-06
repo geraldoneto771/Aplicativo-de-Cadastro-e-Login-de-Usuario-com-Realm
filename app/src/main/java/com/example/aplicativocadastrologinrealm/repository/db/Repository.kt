@@ -46,7 +46,13 @@ open class Repository {
         _usuario.value = list
     }
 
-    fun login(email: String, password: String){
-        Log.e("sucess", "Login")
+    fun login (email: String): UserModel{
+        val project = realm.where<UserModel>()
+            .equalTo("email", email).findFirst()
+        project?.let { aux ->
+            return  aux
+        }?: run{
+            return UserModel()
+        }
     }
 }

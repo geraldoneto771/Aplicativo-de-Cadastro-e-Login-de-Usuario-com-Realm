@@ -39,29 +39,5 @@ open class UserModel(): RealmObject() {
             return user
         }
     }
-
-    fun get(userAux: UserModel): UserModel {
-        var user: UserModel = UserModel()
-        userAux.let {
-            user.id = userAux.id
-            user.name = userAux.name
-            user.email = userAux.email
-            user.senha = userAux.senha
-        }
-        return user
-    }
-
-    fun getLiveData(): MutableLiveData<UserModel> {
-        val user = MutableLiveData<UserModel>()
-        val userAux = realm.where<UserModel>().findFirst()
-        user.value = (userAux)
-
-        return user
-    }
-    fun set(user: UserModel){
-        realm.executeTransaction{
-            it.copyToRealmOrUpdate(user)
-        }
-    }
 }
 
