@@ -18,26 +18,5 @@ open class UserModel(): RealmObject() {
     var email: String = ""
     @SerializedName("senha")
     var senha: String = ""
-
-
-    class Repository() {
-
-        private val realm = Realm.getDefaultInstance()
-        fun get(): UserModel? {
-            val userAux = realm.where(UserModel::class.java).findFirst()
-            var user: UserModel? = UserModel()
-            userAux?.let {
-                user?.id = userAux.id
-                user?.name = userAux.name
-                user?.email = userAux.email
-                user?.senha = userAux.senha
-                user?.email = userAux.email
-            }?: run{
-                user = null
-            }
-
-            return user
-        }
-    }
 }
 
