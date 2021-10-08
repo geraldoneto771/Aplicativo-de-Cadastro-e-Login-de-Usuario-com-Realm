@@ -6,15 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.aplicativocadastrologinrealm.R
+import com.example.aplicativocadastrologinrealm.databinding.FragmentTelaFeedBinding
 
 
 class TelaFeed : Fragment() {
+    private lateinit var mBinding: FragmentTelaFeedBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        mBinding = FragmentTelaFeedBinding.inflate(inflater)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tela_feed, container, false)
+        return mBinding.root
     }
 
 }

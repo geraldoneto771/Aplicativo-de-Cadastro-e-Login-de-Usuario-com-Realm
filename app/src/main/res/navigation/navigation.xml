@@ -47,7 +47,7 @@
     </fragment>
     <fragment
         android:id="@+id/telaFeed"
-        android:name="com.example.aplicativocadastrologinrealm.TelaFeed"
+        android:name="com.example.aplicativocadastrologinrealm.ui.view.TelaFeed"
         android:label="fragment_tela_feed"
         tools:layout="@layout/fragment_tela_feed" />
 </navigation>

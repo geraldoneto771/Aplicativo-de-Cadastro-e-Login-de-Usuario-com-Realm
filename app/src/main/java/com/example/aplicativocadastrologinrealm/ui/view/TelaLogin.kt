@@ -50,7 +50,7 @@ class TelaLogin : Fragment() {
 
         mViewModelUser.login(usuario.toString())
 
-        if (email == "geraldo") {
+        if (email == "geraldo@gmail.com") {
             findNavController().navigate(TelaLoginDirections.actionTelaLoginToTelaFeed())
 
             Snackbar.make(mBinding.root,"Logado com sucesso!", Snackbar.LENGTH_LONG).show()
